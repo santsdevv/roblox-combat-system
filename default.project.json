@@ -1,0 +1,39 @@
+{
+  "name": "roblox-combat-system",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "$ignoreUnknownInstances": true,
+      "$path": "src/ReplicatedStorage",
+
+      "Network": {
+        "$className": "Folder",
+        "CombatSystem": {
+          "$className": "Folder",
+          "SendKey": { "$className": "RemoteEvent" },
+          "Weapon": { "$className": "BindableEvent" },
+          "RequestCombat": { "$className": "BindableEvent" },
+          "Client": {
+            "$className": "Folder",
+            "WeaponHandler": { "$className": "RemoteEvent" },
+            "VFXEvent": { "$className": "RemoteEvent" }
+          }
+        }
+      }
+    },
+
+    "ServerScriptService": {
+      "$ignoreUnknownInstances": true,
+      "$path": "src/ServerScriptService"
+    },
+
+    "StarterPlayer": {
+      "$ignoreUnknownInstances": true,
+      "StarterPlayerScripts": {
+        "$ignoreUnknownInstances": true,
+        "$path": "src/StarterPlayer/StarterPlayerScripts"
+      }
+    }
+  }
+}

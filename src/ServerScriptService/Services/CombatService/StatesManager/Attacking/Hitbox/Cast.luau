@@ -2,15 +2,6 @@
 local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
 
---[[
-	Blade hitbox driven by animation markers.
-
-	Between the "HitStart" and "HitEnded" markers, every Heartbeat it spherecasts
-	along the blade (StartAttachment -> EndAttachment) and also across the swept
-	area between the previous and current frame, so fast swings don't tunnel
-	through targets.
-]]
-
 local Cast = {}
 Cast.__index = Cast
 
